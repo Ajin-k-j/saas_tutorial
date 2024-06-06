@@ -1,0 +1,60 @@
+.header {
+  background-color: #3498db;
+  padding: 20px;
+}
+.header h1 {
+  color: white;
+  margin: 0;
+}
+.header .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #217dbb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.header .button:hover {
+  background-color: #196090;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+.container {
+  width: 100%;
+  margin-top: 20px;
+}
+.container .column-1 {
+  width: 33.3333333333%;
+  padding: 20px;
+  background-color: #8bc4ea;
+  border: 1px solid #217dbb;
+}
+.container .column-2 {
+  width: 66.6666666667%;
+  padding: 20px;
+  background-color: #e1f0fa;
+  border: 1px solid #196090;
+}
+.container .column-3 {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #124364;
+}/*# sourceMappingURL=main.css.map */

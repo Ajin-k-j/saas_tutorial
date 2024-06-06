@@ -1,0 +1,67 @@
+// Variables
+$primary-color: #3498db;
+
+// Mixins
+@mixin flexbox() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Nesting
+.header {
+  background-color: $primary-color;
+  padding: 20px;
+
+  h1 {
+    color: white;
+    margin: 0;
+  }
+
+  .button {
+    @include flexbox;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: darken($primary-color, 10%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($primary-color, 20%);
+    }
+  }
+}
+
+.nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+
+      a {
+        text-decoration: none;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  margin-top: 20px;
+
+  @for $i from 1 through 3 {
+    .column-#{$i} {
+      width: 100% / 3 * $i;
+      padding: 20px;
+      background-color: lighten($primary-color, 20% * $i);
+      border: 1px solid darken($primary-color, 10% * $i);
+    }
+  }
+}
